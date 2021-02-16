@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+
+ Author: Nick Spirakis
+
+ Class:  Software Engineering
+
+ Project: Lab 2 / regex
+
+ Description: This is my regex application and is being submitted as part of Lab 2.
+
+-->
     <head>
         <meta charset="UTF-8">
         <style type="text/css">
@@ -10,15 +21,15 @@
             }
         
         </style>
-
+        <!--gets javascript and html in 1-->
         <script type="text/javascript">
-        
+        //my function to test expressions
         function myTestFunc(){
             var fieldOne = document.getElementById("inputOne").value;
             var fieldTwo = new RegExp(document.getElementById("inputTwo").value);
-
+            //test against the reg ex
             var matches = fieldTwo.test(fieldOne);
-            
+            //result as an alert
             if (matches){
                 alert("Matches");
             }else{
@@ -30,9 +41,10 @@
     </head>
 
     <body>
+        <!--fields-->
         <input type="text" id="inputOne" value="test string"/>
         <input type="text" id="inputTwo" value="test RegExp"/>
-
+        <!--test button-->
         <input type="button" value="test" onclick="myTestFunc()"/>
     </body>
 
