@@ -18,7 +18,12 @@
             var fieldTwo = new RegExp(document.getElementById("inputTwo").value);
 
             var matches = fieldTwo.test(fieldOne);
-           
+            
+            if (matches){
+                alert("Matches");
+            }else{
+                alert("Does not match");
+            }
         }
         
         </script>
