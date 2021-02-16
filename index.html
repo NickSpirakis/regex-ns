@@ -17,7 +17,7 @@
             var fieldOne = document.getElementById("inputOne").value;
             var fieldTwo = document.getElementById("inputTwo").value;
 
-            var matches = fieldOne.match(fieldTwo);
+            var matches = fieldOne.test(fieldTwo);
 
             if(matches)
             {
@@ -33,8 +33,8 @@
     </head>
 
     <body>
-        <input type="text" id="inputOne" value="test" />
-        <input type="text" id="inputTwo" value="test2"/>
+        <input type="text" id="inputOne" value="test string" />
+        <input type="text" id="inputTwo" value="test RegExp"/>
 
         <input type="button" value="test" onclick="myTestFunc()"/>
     </body>
