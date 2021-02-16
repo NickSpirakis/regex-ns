@@ -15,7 +15,7 @@
         
         function myTestFunc(){
             var fieldOne = document.getElementById("inputOne").value;
-            var fieldTwo = document.getElementById("inputTwo").value;
+            var fieldTwo = new RegExp(document.getElementById("inputTwo").value);
 
             var matches = fieldOne.test(fieldTwo);
 
