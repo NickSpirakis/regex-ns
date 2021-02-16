@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body{
+                background-color: aquamarine;
+                text-align: left;
+            }
+        
+        </style>
+
+        <script type="text/javascript">
+        
+        function myTestFunc(){
+            var fieldOne = document.getElementById("inputOne").value;
+            var fieldTwo = document.getElementById("inputTwo").value;
+
+            var matches = fieldOne.match(fieldTwo);
+
+            if(matches)
+            {
+                alert("Expressions Match")
+            }
+            else
+            {
+                alert("Expressions Do NOT Match")
+            }
+        }
+        
+        </script>
+    </head>
+
+    <body>
+        <input type="text" id="inputOne" value="test" />
+        <input type="text" id="inputTwo" value="test2"/>
+
+        <input type="button" value="test" onclick="myTestFunc()"/>
+    </body>
+
+</html>
