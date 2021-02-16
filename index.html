@@ -17,16 +17,8 @@
             var fieldOne = document.getElementById("inputOne").value;
             var fieldTwo = new RegExp(document.getElementById("inputTwo").value);
 
-            var matches = fieldOne.test(fieldTwo);
-
-            if(matches == true)
-            {
-                alert("Expressions Match")
-            }
-            else
-            {
-                alert("Expressions Do NOT Match")
-            }
+            var matches = fieldTwo.test(fieldOne);
+           
         }
         
         </script>
